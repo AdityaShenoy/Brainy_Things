@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#header {
+  width: 100vw;
+  height: 15vh;
+
+  border-bottom: 1px solid black;
+}
+
+#logo {
+  width: 12vh;
+  height: 12vh;
+
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+
+  display: inline-block;
+
+  border: 1px solid black;
+}
+
+#tagline {
+  font-family: Verdana;
+  font-size: 8vh;
+
+  position: absolute;
+  top: 4vh;
+  right: 2vh;
+}
+
+#nav {
+  height: 10vh;
+  width: 100vw;
+
+  position: sticky;
+  top: 0;
+  
+  border-bottom: 1px solid black;
+}
+
+#nav_table {
+  width: 100vw;
+  height: 10vh;
+  
+  padding: 0px;
+}
+
+.nav_links {
+  width: 20vw;
+  height: 10vh;
+  
+  display: inline-block;
+  border-right: 1px solid black;
+  
+  font-size: 6vh;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div id="header">
+  <img id="logo" src="/images/logo.jpg" alt="Logo" />
+  <span id="tagline">Tagline</span>
+</div>
+<div id="nav">
+  <table id="nav_table">
+    <tr>
+      <td><a class="nav_links" href="#">Home</a></td>
+      <td><a class="nav_links" href="#">Java</a></td>
+      <td><a class="nav_links" href="#">Python</a></td>
+      <td><a class="nav_links" href="#">Cubing</a></td>
+      <td><a class="nav_links" href="#">Maths</a></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
