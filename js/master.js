@@ -40,3 +40,14 @@ if (pkgSpanLen < 20) {
 
 ext = document.getElementById('extends');
 ext.style.fontSize = pkg.style.fontSize;
+
+vis = document.getElementsByClassName('heading');
+for (var i = 0; i < vis.length; i++) {
+	vis[i].onclick = function makeVis(){
+		this.nextSibling.nextSibling.style.display = "block";
+		this.onclick = function makeInv() {
+		this.nextSibling.nextSibling.style.display = "none";
+			this.onclick = makeVis;
+		};
+	};
+}

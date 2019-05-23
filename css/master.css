@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	color: white;
 	font-family: sans-serif;
+	font-size: 3vh;
 	margin: 0;
 	padding: 0;
 }
@@ -42,8 +43,33 @@
 }
 
 a {
+	background-color: inherit;
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
 	text-decoration: none;
+}
+
+.heading {
+	border-bottom: 2px solid white;
+	font-weight: bold;
+	padding: 0.5vh 0;
+	text-align: center;
+}
+
+#fields, #constructors, #methods {
+	border-bottom: 2px solid white;
+	padding: 0 5vw;
+}
+
+.summary {
+	background-color: #222;
+	border: 1px solid white;
+	border-radius: 5vw;
+	margin: 1vh 0;
+	padding: 0 5vw;
+}
+
+.invisible {
+	display: none;
 }
