@@ -49,9 +49,9 @@ ext.style.fontSize = pkg.style.fontSize;
 function changeArrow(e, x) {
   s = e.parentNode.childNodes[1].innerHTML; //childNodes[0] is text between tags
   if (s[0] == '\u25be' || s[0] == '\u25b4') {
-    e.parentNode.childNodes[1].innerHTML = '&#' + x + s.slice(1, s.length);
+    e.parentNode.childNodes[1].innerHTML = '&#' + x + ';' + s.slice(1, s.length);
   } else {
-    e.parentNode.childNodes[1].innerHTML = s.slice(0, -1) + '&#' + x;
+    e.parentNode.childNodes[1].innerHTML = s.slice(0, -1) + '&#' + x + ';';
   }
 }
 
@@ -67,28 +67,4 @@ for (var i = 0; i < vis.length; i++) {
       this.onclick = makeVis;
     };
   };
-}
-
-function highlightWord(s, w, color) {
-  console.log(w);
-  console.log(s.indexOf(w));
-  s = s.replace('<span style="color:' + color + '">' + w + '</span>');
-  return s;
-}
-
-function highlightWords(s, ws, color) {
-  for (var i = 0; i < ws.length; i++) {
-    s = highlightWord(s, ws[i], color);
-  }
-  return s;
-}
-
-// Syntax highlighting
-eg = document.getElementsByClassName('example');
-for (var i = 0; i < eg.length; i++) {
-  s = eg[i].innerHTML;
-
-  s = highlightWords(s, ['*', '=', '[]', 'import', 'public', 'static'], '#ff002b');
-
-  eg[i].innerHTML = s;
 }

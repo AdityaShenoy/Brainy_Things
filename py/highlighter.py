@@ -1,16 +1,16 @@
-s = '''import java.util.*;
+s = '''☺Rimport☺ ☺Bjava☺☺W.☺☺Butil☺☺W.☺☺R*☺☺W;☺
 
-public class BrainyThings {
-  public static void main(String[] args) {
-    Integer[] a = {1, 4, 2, 3, 5};
+☺Rpublic☺ ☺Bclass ☺GBrainyThings☺ {
+  ☺Rpublic☺ ☺Rstatic☺ ☺Bvoid☺ ☺Gmain☺(☺BString☺☺R[]☺ ☺Oargs☺) {
+    ☺BInteger☺☺R[]☺ ☺Wa☺ ☺R=☺ {☺P1☺, ☺P4☺, ☺P2☺, ☺P3☺, ☺P5☺};
     
-    List<Integer> l = Arrays.asList(a);
-    System.out.println(l);
-    System.out.println(Arrays.toString(a));
+    ☺BList☺☺W<☺☺BInteger☺☺W>☺ ☺Wl☺ = ☺BArrays☺.☺BasList☺(a);
+    ☺BSystem☺.out.☺Bprintln☺(l);
+    ☺BSystem☺.out.☺Bprintln☺(☺BArrays☺.☺BtoString☺(a));
 
-    l.set(2, 8);
-    System.out.println(l);
-    System.out.println(Arrays.toString(a));
+    l.☺Bset☺(☺P2☺, ☺P8☺);
+    ☺BSystem☺.out.☺Bprintln☺(l);
+    ☺BSystem☺.out.☺Bprintln☺(☺BArrays☺.☺BtoString☺(a));
   }
 }'''
 
@@ -19,7 +19,14 @@ public class BrainyThings {
 # f('#0099cc', blue)
 # f('#77b300', green)
 # f('#ff9900', orange)
-f = open('abc.txt', 'w')
-red = ['*', '=', 'import', 'public', 'static']
-green = ['BrainyThings', 'main']
-blue = ['Arrays', 'asList', 'class', 'Integer', 'java', 'String', 'util', 'void']
+s = s.replace(' ', '&nbsp;')
+s = s.replace('<', '&lt;')
+s = s.replace('>', '&gt;')
+s = s.replace('\n', '<br />')
+s = s.replace('☺B', '<span style="color:#0099cc;">')
+s = s.replace('☺G', '<span style="color:#77b300;">')
+s = s.replace('☺O', '<span style="color:#ff9900;">')
+s = s.replace('☺P', '<span style="color:#a366ff;">')
+s = s.replace('☺R', '<span style="color:#ff002b;">')
+s = s.replace('☺', '</span>')
+print(s)
