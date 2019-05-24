@@ -64,12 +64,30 @@
 
           <br />
           <div class="desc">
-            <b>Description:</b><br />
+            <b>Description:</b>
             Converts the given array into a fixed size wrapper List. You cannot add or remove elements to/from the list. You can overwrite the values in the list which updates the original array as well.
           </div>
 
-          <div class="example">
-<span style="color:#ff002b;">import</span>&nbsp;<span style="color:#0099cc;">java</span>.<span style="color:#0099cc;">util</span>.<span style="color:#ff002b;">*</span>;<br /><br /><span style="color:#ff002b;">public</span>&nbsp;<span style="color:#0099cc;">class&nbsp;<span style="color:#77b300;">BrainyThings</span>&nbsp;{<br />&nbsp;&nbsp;<span style="color:#ff002b;">public</span>&nbsp;<span style="color:#ff002b;">static</span>&nbsp;<span style="color:#0099cc;">void</span>&nbsp;<span style="color:#77b300;">main</span>(<span style="color:#0099cc;">String</span><span style="color:#ff002b;">[]</span>&nbsp;<span style="color:#ff9900;">args</span>)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0099cc;">Integer</span><span style="color:#ff002b;">[]</span>&nbsp;a&nbsp;<span style="color:#ff002b;">=</span>&nbsp;{<span style="color:#a366ff;">1</span>,&nbsp;<span style="color:#a366ff;">4</span>,&nbsp;<span style="color:#a366ff;">2</span>,&nbsp;<span style="color:#a366ff;">3</span>,&nbsp;<span style="color:#a366ff;">5</span>};<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0099cc;">List</span>&lt;<span style="color:#0099cc;">Integer</span>&gt;&nbsp;l&nbsp;=&nbsp;<span style="color:#0099cc;">Arrays</span>.<span style="color:#0099cc;">asList</span>(a);<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0099cc;">System</span>.out.<span style="color:#0099cc;">println</span>(l);<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0099cc;">System</span>.out.<span style="color:#0099cc;">println</span>(<span style="color:#0099cc;">Arrays</span>.<span style="color:#0099cc;">toString</span>(a));<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;l.<span style="color:#0099cc;">set</span>(<span style="color:#a366ff;">2</span>,&nbsp;<span style="color:#a366ff;">8</span>);<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0099cc;">System</span>.out.<span style="color:#0099cc;">println</span>(l);<br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#0099cc;">System</span>.out.<span style="color:#0099cc;">println</span>(<span style="color:#0099cc;">Arrays</span>.<span style="color:#0099cc;">toString</span>(a));<br />&nbsp;&nbsp;}<br />}
+          <br />
+          <div>
+            <b>Example</b>
+            <pre class="example">
+import java.util.*;
+
+public class BrainyThings {
+  public static void main(String[] args) {
+    
+    Integer[] a = {1, 4, 2, 3, 5};
+    
+    List&lt;Integer&gt; l = Arrays.asList(a);
+    System.out.println(l);
+    System.out.println(Arrays.toString(a));
+
+    l.set(2, 8);
+    System.out.println(l);
+    System.out.println(Arrays.toString(a));
+  }
+}</pre>
           </div>
           <div class="animate">
             
