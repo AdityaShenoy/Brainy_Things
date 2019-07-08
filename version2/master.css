@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#logo img {
+    height: 6vw;
+    left: 1vw;
+    position: absolute;
+    top: 0.5vh;
+    width: 6vw;
+    z-index: 1;
+}
+
+#brainyThings {
+    color: white;
+    right: 100vw;
+    font-family: "Times";
+    font-size: 6vw;
+    line-height: 6vw;
+    position: absolute;
+    top: 0.5vh;
+    transition: transform 1s ease 0s;
+    -moz-transition: transform 1s ease 0s;
+    -o-transition: transform 1s ease 0s;
+    -webkit-transition: transform 1s ease 0s;
+    width: 70vw;
+}
+
+#logo:hover #brainyThings {
+    transform: translate3d(80vw, 0, 0);
+    -moz-transform: translate3d(80vw, 0, 0);
+    -o-transform: translate3d(80vw, 0, 0);
+    -webkit-transform: translate3d(80vw, 0, 0);
+}
