@@ -1,0 +1,11 @@
+Hello everyone. Welcome to the Brainy Things. My name is Aditya Shenoy and in this video we are going to discuss about the Longest Increasing Subsequence Problem. The problem states that given an array, find the length of the longest increasing subsequnce in that array.
+
+First of all what do we mean by increasing subsequence? For example, given this array, we can have a single element of 10 as an increasing subsequence.
+
+Subsequence of 10 and 22 also form an increasing subsequence.
+
+Subsequence need not be contiguous in nature and hence subsequence of 10 and 33 also form an increasing subsequence.
+
+Like this way, the longest increasing subsequence in this array is 10, 22, 33, 50, 60 and 80 having a length of 6.
+
+Let us see what happens if we use recursion to solve this problem. We can define the recursive function as LIS(i) = max(LIS(j)) where j is in range 0 to (i - 1) and a[j] <= a[i]. If there exists no such j satisfying this condition then LIS(j) = 1
