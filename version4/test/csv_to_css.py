@@ -16,7 +16,7 @@ prop_shorthand = {
 f = open('input.csv')
 
 # Initialize the output to empty list of strings
-output = []
+animation = []
 
 # Iterate through each row except for the first which is header row
 for row in f.readlines()[1:]:
@@ -24,14 +24,14 @@ for row in f.readlines()[1:]:
   # Extract element ID which is the first column of the row
   elem = row.split(',')[0]
 
-  # CSS output
-  output.append(f'#{elem} {{')
+  # Output files
+  animation.append(f'#{elem} {{')
 
   # Remove the element ID from the row
   row_without_elem = row.lstrip(elem)
   
-  # Strip the empty rows (commas) from the right of the row
-  row_r_striped = row_without_elem.rstrip(',')
+  # Strip the new line character and empty rows (commas) from the right of the row
+  row_r_striped = row_without_elem.rstrip().rstrip(',')
   
   # Strip the empty rows (commas) from the left of the row
   row_lr_striped = row_r_striped.lstrip(',')
@@ -47,9 +47,9 @@ for row in f.readlines()[1:]:
   # Subtracting 1 as the last frame does not consume time
   anim_durn = len(frames) - 1
   
-  # CSS output
+  # Output files
   s = '\tanimation: {}_anim {} ease {} 1 normal forwards running;\n}}\n\n@keyframes {}_anim {{'
-  output.append(s.format(elem, anim_durn, anim_delay, elem))
+  animation.append(s.format(elem, anim_durn, anim_delay, elem))
 
   # Iterate through all frames enumerating its time number
   for time, frame in enumerate(frames):
@@ -64,8 +64,8 @@ for row in f.readlines()[1:]:
     if not changes[0]:
       continue
 
-    # CSS output
-    output.append(f'\t{time_in_percent}% {{')
+    # Output files
+    animation.append(f'\t{time_in_percent}% {{')
 
     # Iterate through all the property changes
     for change in changes:
@@ -74,14 +74,14 @@ for row in f.readlines()[1:]:
       # Change will consist of property:value format
       prop, val = change.split(':')
 
-      # CSS output
-      output.append(prop_shorthand[prop].format(val))
+      # Output files
+      animation.append(prop_shorthand[prop].format(val))
     
-    # CSS output
-    output.append('\t}')
+    # Output files
+    animation.append('\t}')
 
-  # CSS output
-  output.append('}\n')
+  # Output files
+  animation.append('}\n')
 
-# Create an output file named animation.css and write the CSS output into it
-open('animation.css', 'w').write('\n'.join(output))
+# Create output files and write the contents into it
+open('animation.css', 'w').write('\n'.join(animation))
