@@ -1,0 +1,20 @@
+#logo {
+  animation-name: logo_animation;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+
+@keyframes logo_animation {
+  0.00% {
+    opacity: 0;
+    transform: translateY(500) translateX(0);
+  }
+  40.00% {
+    opacity: 0.25;
+  }
+  100.00% {
+    opacity: 1;
+    transform: translateY(0) translateX(500);
+  }
+}
+
