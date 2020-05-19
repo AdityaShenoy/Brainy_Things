@@ -1,3 +1,5 @@
+import pyautogui as pag
+
 # CSS transform animations
 transforms = {
   'sx': 'scaleX({})',
@@ -47,6 +49,7 @@ with open('keyframes.csv') as inp:
       out.write(f'  animation-name: {elem}_animation;\n')
       out.write(f'  animation-duration: {anim_durn}s;\n')
       out.write(f'  animation-delay: {anim_delay}s;\n')
+      out.write(f'  animation-fill-mode: forwards;\n')
       out.write('}\n\n')
       out.write(f'@keyframes {elem}_animation {{\n')
 
@@ -92,3 +95,7 @@ with open('keyframes.csv') as inp:
           )
         out.write('  }\n')
       out.write('}\n\n')
+
+# Open browser and refresh animation
+pag.hotkey('win', '3')
+pag.press('f5')
