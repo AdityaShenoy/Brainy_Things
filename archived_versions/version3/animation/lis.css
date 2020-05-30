@@ -1,0 +1,42 @@
+#logo {
+  animation: logoAnimate 10s ease 1s 1 normal forwards running;
+}
+
+@keyframes logoAnimate {
+  10.00%, 40.00% {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+  60.00%, 80.00% {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(-600px, 0, 0);
+    opacity: 1;
+  }
+}
+#bt_b {
+  animation: bt_bAnimate 6s ease 5s 1 normal forwards running;
+}
+
+@keyframes bt_bAnimate {
+  33.33%, 66.67% {
+    transform: translate3d(-650px, 0, 0);
+  }
+  to {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+#bt_t {
+  animation: bt_tAnimate 6s ease 5s 1 normal forwards running;
+}
+
+@keyframes bt_tAnimate {
+  33.33%, 66.67% {
+    transform: translate3d(-650px, 0, 0);
+  }
+  to {
+    transform: translate3d(0px, 0, 0);
+  }
+}

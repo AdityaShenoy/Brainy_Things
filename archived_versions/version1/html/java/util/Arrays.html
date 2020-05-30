@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>java.util.Arrays</title>
+  <link rel="stylesheet" type="text/css" href="../../../css/java/master.css" />
+</head>
+<body>
+  <a href="../../../index.html">
+    <div id="header">
+      <img id="logo" src="../../../img/logo.png" alt="logo" />
+      <div id="brainyThings">Brainy Things</div>
+    </div>
+  </a>
+
+  <div id="clsName">
+    <span class="code">Arrays</span>
+  </div>
+
+  <div id="pkgName">
+    Package: 
+    <span class="code">
+      <a href="../java.html">java</a>.<a href="util.html">util</a>
+    </span>
+  </div>
+
+  <div id="extends">
+    extends
+    <a href="../lang/Object.html">
+      <span class="code">Object</span>
+    </a>
+  </div>
+
+  <div class="desc">
+    Arrays is a class which contains various methods that are commonly operated on arrays. Arrays class is different than the normal array, which we use commonly in Java programs. Below is the list of fields, constructors and methods of the Arrays class.
+  </div>
+
+  <div id="fields">
+    <div class="heading visible">Fields &#9662</div>
+    <div class="invisible">
+      None
+    </div>
+  </div>
+
+  <div id="constructors">
+    <div class="heading visible">Constructors &#9662</div>
+    <div class="invisible">
+      None
+    </div>
+  </div>
+
+  <div id="methods">
+    <div class="heading visible">Methods &#9662;</div>
+    <div class="invisible">
+
+      <div id="m1" class="content">
+        <div class="code visible">&#9662; asList()</div>
+        <div class="invisible">
+          
+          <br />
+          <div class="syntax">
+            <b>Syntax:</b>
+            <div class="code">static &lt;T&gt; <a href="List.html">List</a>&lt;T&gt; asList(T... a)</div>
+          </div>
+
+          <br />
+          <div class="desc">
+            <b>Description:</b>
+            Converts the given array into a fixed size wrapper List. You cannot add or remove elements to/from the list. You can overwrite the values in the list which updates the original array as well.
+          </div>
+
+          <br />
+          <div>
+            <b>Example</b>
+            <pre class="example">
+import java.util.*;
+
+public class BrainyThings {
+  public static void main(String[] args) {
+    
+    Integer[] a = {1, 4, 2, 3, 5};
+    
+    List&lt;Integer&gt; l = Arrays.asList(a);
+    System.out.println(l);
+    System.out.println(Arrays.toString(a));
+
+    l.set(2, 8);
+    System.out.println(l);
+    System.out.println(Arrays.toString(a));
+  }
+}</pre>
+          </div>
+          <div class="animate">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../../../js/java/master.js"></script>
+</body>
+</html>

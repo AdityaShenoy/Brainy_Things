@@ -1,0 +1,69 @@
+#logo {
+  animation-name: logo_animation;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_animation {
+  0.00% {
+    transform: translateY(24vh) translateX(200vw);
+  }
+  42.86% {
+    transform: translateY(24vh) translateX(40vw);
+  }
+  57.14% {
+    transform: translateY(24vh) translateX(40vw);
+  }
+  100.00% {
+    transform: translateY(-100vh) translateX(40vw);
+  }
+}
+
+#bt {
+  animation-name: bt_animation;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bt_animation {
+  0.00% {
+    transform: translateY(55vh) translateX(200vw);
+  }
+  42.86% {
+    transform: translateY(55vh) translateX(35vw);
+  }
+  57.14% {
+    transform: translateY(55vh) translateX(35vw);
+  }
+  100.00% {
+    transform: translateY(200vh) translateX(35vw);
+  }
+}
+
+#title {
+  animation-name: title_animation;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title_animation {
+  0.00% {
+    transform: translateY(36vh) translateX(36vw) scaleY(0) scaleX(0);
+  }
+  40.00% {
+    transform: translateY(36vh) translateX(36vw) scaleY(0) scaleX(0);
+  }
+  60.00% {
+    transform: translateY(36vh) translateX(36vw) scaleY(1) scaleX(1);
+  }
+  70.00% {
+    transform: translateY(36vh) translateX(36vw) scaleY(1) scaleX(1);
+  }
+  100.00% {
+    transform: translateY(36vh) translateX(-100vw) scaleY(1) scaleX(1);
+  }
+}
+

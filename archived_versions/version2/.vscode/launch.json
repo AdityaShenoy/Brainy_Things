@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BrainyThings",
+            "request": "launch",
+            "mainClass": "programming.java.util.Arrays.asList.BrainyThings",
+            "projectName": "version2_ac648350"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BrainyThings",
+            "request": "launch",
+            "mainClass": "programming.java.util.Arrays.BrainyThings",
+            "projectName": "version2_ac648350"
+        }
+    ]
+}

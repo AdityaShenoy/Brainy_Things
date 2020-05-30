@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#logo {
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  width: 300px;
+  height: 300px;
+}
+
+#bt {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  top: 475px;
+  left: 475px;
+}
