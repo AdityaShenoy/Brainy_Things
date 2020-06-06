@@ -12,7 +12,7 @@ def main(scr):
     '  for i in range(2, n+1):',
     '    dp.append(dp[-1] + dp[-2])',
     '    del dp[0]',
-    '  return dp[n]',
+    '  return dp[-1]',
   ]
   max_code_width = max(map(len, code_lines))
 
