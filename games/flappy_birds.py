@@ -6,36 +6,73 @@ import random
 def main(scr):
   curses.curs_set(0)
   scr.nodelay(1)
-  scr.timeout(150)
 
-  height, width = scr.getmaxyx()
-
+  HEIGHT, WIDTH = scr.getmaxyx()
   MARGIN = 3
   GAP_WIDTH = 3
   INTER_GAP_WIDTH = 15
+  FLAPPY_BIRD = '@'
+
+  game_difficulty = 200
+  scr.timeout(game_difficulty)
 
   pipe = []
-  x = width // 2
-  while x < width - MARGIN:
-    gap_start = random.randint(MARGIN + 1, height - MARGIN - GAP_WIDTH)
+  x = WIDTH // 2
+  while x < WIDTH - MARGIN:
+    gap_start = random.randint(MARGIN + 1, HEIGHT - MARGIN - GAP_WIDTH)
     pipe.append((x, gap_start))
     x += INTER_GAP_WIDTH
 
-  rectangle(scr, MARGIN, MARGIN, height - MARGIN, width - MARGIN)
+  rectangle(scr, MARGIN, MARGIN, HEIGHT - MARGIN, WIDTH - MARGIN)
   
-  flappy_bird = '@'
-  flappy_y, flappy_x = height // 2, width // 4
+  flappy_y, flappy_x = HEIGHT // 2, WIDTH // 4
 
+  score_text = 'Score: {}'
+  score = 0
+
+  loop_cntr = 0
   while True:
 
-    for x, gap_start in pipe:
-      for y in range(MARGIN + 1, height - MARGIN):
-        if y not in range(gap_start, gap_start + GAP_WIDTH):
-          scr.addstr(y, x, '|')
+    game_text = score_text.format(score)
+    game_text_y, game_text_x = 1, (WIDTH - len(game_text)) // 2
+    scr.addstr(game_text_y, game_text_x, game_text)
 
-    scr.addstr(flappy_y, flappy_x, flappy_bird)
+    if loop_cntr == INTER_GAP_WIDTH:
+      gap_start = random.randint(MARGIN + 1, HEIGHT - MARGIN - GAP_WIDTH)
+      pipe.append((pipe[-1][0] + INTER_GAP_WIDTH, gap_start))
+      loop_cntr = 0
+      game_difficulty = max(1, game_difficulty - 5)
+      scr.timeout(game_difficulty)
+
+    obstructions = set()
+
+    for x, gap_start in pipe:
+      if flappy_x == x:
+        score += 1
+      for y in range(MARGIN + 1, HEIGHT - MARGIN):
+        if y not in range(gap_start, gap_start + GAP_WIDTH):
+          scr.addstr(y, x, '| ')
+          obstructions.add((y, x))
+    pipe = [(x - 1, gap_start) for x, gap_start in pipe if x > MARGIN]
+
+    scr.addstr(flappy_y, flappy_x, FLAPPY_BIRD)
     scr.refresh()
     key = scr.getch()
+    
+    if flappy_y in [MARGIN, HEIGHT - MARGIN] or \
+      (flappy_y, flappy_x) in obstructions:
+      if (flappy_y, flappy_x) in obstructions:
+        score -= 1
+      game_text = f'GAME OVER. Score: {score}'
+      game_text_y, game_text_x = 1, (WIDTH - len(game_text)) // 2
+      spaces = ' ' * WIDTH
+      scr.addstr(1, 0, spaces)
+      scr.addstr(game_text_y, game_text_x, game_text)
+      scr.refresh()
+      scr.timeout(-1)
+      scr.getch()
+      break
+    
     if key == 27: # Esc
       break
     scr.addstr(flappy_y, flappy_x, ' ')
@@ -44,5 +81,6 @@ def main(scr):
     else:
       flappy_y += 1
     
+    loop_cntr += 1
 
 curses.wrapper(main)
