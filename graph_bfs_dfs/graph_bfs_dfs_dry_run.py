@@ -6,15 +6,15 @@ def main(scr):
 
   code_lines = [
     'node = queue.pop(0)',
-    'print(node.value, end=' ')',
+    'print(node.value, end=\' \')',
     'if node.value == key:',
     '  print(\'\\nKey found\')',
     '  return',
     '',
     'for neighbor in node.neighbors:',
-    '  if not visited[neighbor]:',
+    '  if neighbor not in visited:',
     '    queue.append(neighbor)',
-    '    visited[neighbor] = True',
+    '    visited.add(neighbor)',
   ]
   max_code_width = max(map(len, code_lines))
 
@@ -57,18 +57,18 @@ def main(scr):
         print('Node not present in the graph')
         return
       
-      visited = {node: False for node in self.nodes.values()}
+      visited = set()
 
       queue = [self.nodes[start]]
-      visited[self.nodes[start]] = True
+      visited.add(self.nodes[start])
 
       print_string = ''
-      add_comment(9, f'visited = {[k.value for k in visited if visited[k]]}')
+      add_comment(9, f'visited = { {x.value for x in visited} }')
 
       while queue:
 
         node = queue.pop(0)
-        add_comment(0, f'queue = {[n.value for n in queue]} node = {node.value}')
+        add_comment(0, f'queue = {[x.value for x in queue]} node = {node.value}')
         add_comment(2, '')
         add_comment(6, '')
         add_comment(7, '')
@@ -83,7 +83,7 @@ def main(scr):
         if node.value == key:
 
           print_string += ' Key found'
-          add_comment(3, print_string)
+          add_comment(1, print_string)
           point_code_line(3)
 
           point_code_line(4)
@@ -94,17 +94,16 @@ def main(scr):
           add_comment(7, f'     ')
           point_code_line(6)
 
-          add_comment(7, f'{not visited[neighbor]}')
+          add_comment(7, f'{neighbor not in visited}')
           point_code_line(7)
-          if not visited[neighbor]:
-
+          if neighbor not in visited:
 
             queue.append(neighbor)
-            add_comment(0, f'queue = {[n.value for n in queue]} node = {node.value}')
+            add_comment(0, f'queue = {[x.value for x in queue]} node = {node.value}')
             point_code_line(8)
 
-            visited[neighbor] = True
-            add_comment(9, f'visited = {[k.value for k in visited if visited[k]]}')
+            visited.add(neighbor)
+            add_comment(9, f'visited = { {x.value for x in visited} }')
             point_code_line(9)
     
   g = Graph()
@@ -114,6 +113,6 @@ def main(scr):
     g.addEdge(node1, node2)
     g.addEdge(node2, node1)
 
-  g.bfs(1, 7)
+  g.bfs(1, 6)
 
 curses.wrapper(main)

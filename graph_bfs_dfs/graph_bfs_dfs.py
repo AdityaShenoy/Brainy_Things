@@ -21,10 +21,10 @@ class Graph:
       print('Node not present in the graph')
       return
     
-    visited = {node: False for node in self.nodes.values()}
+    visited = set()
 
     queue = [self.nodes[start]]
-    visited[self.nodes[start]] = True
+    visited.add(self.nodes[start])
 
     while queue:
 
@@ -35,9 +35,9 @@ class Graph:
         return
 
       for neighbor in node.neighbors:
-        if not visited[neighbor]:
+        if neighbor not in visited:
           queue.append(neighbor)
-          visited[neighbor] = True
+          visited.add(neighbor)
       
     print('\nKey not found')
 
