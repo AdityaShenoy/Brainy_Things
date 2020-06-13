@@ -5,7 +5,7 @@ def main(scr):
   w = scr.getmaxyx()[1]
 
   code_lines = [
-    'node = queue.pop(0)',
+    'node = queue.pop()',
     'print(node.value, end=\' \')',
     'if node.value == key:',
     '  print(\'\\nKey found\')',
@@ -67,7 +67,7 @@ def main(scr):
 
       while queue:
 
-        node = queue.pop(0)
+        node = queue.pop()
         add_comment(0, f'queue = {[x.value for x in queue]} node = {node.value}')
         add_comment(2, '')
         add_comment(6, '')
