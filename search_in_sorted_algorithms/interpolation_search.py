@@ -1,7 +1,7 @@
 def interpolation_search(a, key):
   l, r = 0, len(a) - 1
   while l <= r:
-    mid = l + (key - a[l]) * (r - l) // (a[r] - a[l])
+    mid = l + ((key - a[l]) * (r - l) // (a[r] - a[l]))
     if key == a[mid]:
       return mid
     if key < a[mid]:
