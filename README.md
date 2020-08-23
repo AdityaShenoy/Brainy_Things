@@ -1,6 +1,6 @@
 # Brainy_Things
 
-A region where you can learn any brain related things. These include programming, mathematics tricks, etc.
+YouTube channel that teaches programming concepts using illustrations
 
 This repository contains codes that are used in the making of the YouTube channel videos.
 
