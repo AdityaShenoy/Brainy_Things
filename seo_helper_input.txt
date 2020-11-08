@@ -2,26 +2,31 @@ Type:
 V
 
 Title:
-Edit Distance | Edit Distance Dynamic Programming | Edit Distance Tabulation | Edit Distance Python
+Quick Sort Algorithm | Quick Sort Divide and Conquer Algorithm | Quick Sort Example | Quicksort
 
 Keywords:
-edit distance
-edit distance dynamic programming
-edit distance tabulation
-edit distance python 3
+quick sort algorithm
+quick sort divide and conquer algorithm
+quick sort example
+quicksort
+quick sorting in data sturcture
+quick sort in python
+quick sort time complexity
+quicksort algorithm
+quicksort example
+quicksort explanation
 
 Timestamps:
 00:00 Introduction
-00:49 Edit Distance Problem Definition and Intuitive Solution
-11:35 Edit Distance Recursive Code
-17:14 Edit Distance Memoization Code
-21:02 Edit Distance Tabulation Code
-27:22 Edit Distance Space Optimized Tabulation Code
-32:53 Complexity Analysis
+00:37 Quick Sort Algorithm
+01:03 Quick Sort Code
+13:37 Quick Sort Dry Run
+20:25 Quick Sort Stability
+25:20 Complexity Analysis
 
 Suggested Videos and Playlists:
-.Dynamic Programming Memoization: https://youtu.be/zlJegWQBb40
-.Dynamic Programming Tabulation: https://youtu.be/kyzwqvIRgmE
+Dynamic Programming Memoization: https://youtu.be/zlJegWQBb40
+Dynamic Programming Tabulation: https://youtu.be/kyzwqvIRgmE
 Python Game Programming Part 1: https://youtu.be/3ZFD1PjhXqE
 Python Game Programming Part 2: https://youtu.be/J3sCMEKJnuQ
 Graph Data Structure - Breadth First Search and Depth First Search: https://youtu.be/X3_AzIkobSQ
@@ -62,6 +67,8 @@ Linked List Search Iterative Code: https://youtu.be/O1nGmwfBLNI
 Linked List Search Recursive Code: https://youtu.be/zvVmcva2vTo
 Backtracking Algorithm Knight Tour: https://youtu.be/a1zqKaq8haY
 Backtracking Algorithm Sudoku Solver: https://youtu.be/vKXSqb6o4nE
+Edit Distance Dynamic Programming: https://youtu.be/6CJxaLbxsQo
+Quick Sort Algorithm: https://youtu.be/f8-hF_cfAgo
 .Data Structures and Algorithms Tutorial: https://www.youtube.com/playlist?list=PLrJGwAG1U62RhAOKhYgqqRvDBjFb4wKp1
 Python Game Programming: https://www.youtube.com/playlist?list=PLrJGwAG1U62RO8Fbkt_WBgQMx2b7IsEB0
 Python Built in Functions A to Z: https://www.youtube.com/playlist?list=PLrJGwAG1U62RW_hGGnk7xXG0LciHkT54X
@@ -72,8 +79,8 @@ GitHub Repository:
 https://github.com/AdityaShenoy/Data_Structures_and_Algorithms
 
 Hashtags:
-edit distance
-dynamic programming
+quick sort
+sorting algorithm
 algorithms
 brainy things
 aditya shenoy
