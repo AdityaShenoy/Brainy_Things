@@ -12,8 +12,7 @@ react js project tutorial
 
 Timestamps:
 00:00 Introduction
-01:01 Designing
-13:52 Setup React Project
+01:17 Write CSS
 
 Suggested Videos and Playlists:
 Dynamic Programming Memoization: https://youtu.be/zlJegWQBb40
@@ -62,11 +61,13 @@ Edit Distance Dynamic Programming: https://youtu.be/6CJxaLbxsQo
 Quick Sort Algorithm: https://youtu.be/f8-hF_cfAgo
 N Queen Backtracking Algorithm: https://youtu.be/KZ5VSH47hVU
 React JS Stone Paper Scissors Part 1: https://youtu.be/rZyuNNY2nvw
+React JS Stone Paper Scissors Part 2: https://youtu.be/X9OyUIhN92M
 .Data Structures and Algorithms Tutorial: https://www.youtube.com/playlist?list=PLrJGwAG1U62RhAOKhYgqqRvDBjFb4wKp1
 .Python Game Programming: https://www.youtube.com/playlist?list=PLrJGwAG1U62RO8Fbkt_WBgQMx2b7IsEB0
 Python Built in Functions A to Z: https://www.youtube.com/playlist?list=PLrJGwAG1U62RW_hGGnk7xXG0LciHkT54X
 Binary Tree Data Strucutre and Algorithms: https://www.youtube.com/playlist?list=PLrJGwAG1U62QC7R_qxeTFYBwdUlWcu03l
 Linked List Data Structure and Algorithms: https://www.youtube.com/playlist?list=PLrJGwAG1U62Q2XqQdivTuFElLzZc5jX2K
+.React JS Stone Paper Scissors: https://youtube.com/playlist?list=PLrJGwAG1U62QgFXcjx29UMSA_mNs-ASRE
 
 GitHub Repository:
 https://github.com/AdityaShenoy/Stone_Papers_Scissors
