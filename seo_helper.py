@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 
 seo_elems = dict()
 
@@ -56,4 +56,4 @@ if seo_type == 'video':
         '\n') + ['aditya shenoy', 'brainy things'])
     result += '\n' + keywords
 
-clipboard.copy(result)
+pyperclip.copy(result)
