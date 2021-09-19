@@ -2,24 +2,30 @@ Type:
 V
 
 Title:
-Add Two Numbers | Competitive Programming | LeetCode | Competitive Programming Systematic Approach
+Longest Substring without Repeating Characters | Competitive Programming | LeetCode
 
 Keywords:
-Add Two Numbers
 Competitive Programming
+Competitive Programming for Beginners
+Competitive Programming Python
+Competitive Programming Roadmap
+Longest Substring without Repeating Characters
 Leetcode
+Leetcode Python
+Leetcode for Beginners
+Medium Level Problems
 CP Practice
 CP Approach
 Competitive Programming Systematic Approach
 
 Timestamps:
 00:00 Introduction
-00:36 What's the Problem?
-01:21 Assumptions and Constraints
-04:33 Baby Approach
-05:19 Manual Approach
-05:58 Code
-17:54 Manually Hard Approach
+00:28 What's the Problem?
+00:50 Assumptions and Constraints
+02:16 Baby Approach
+04:39 Manual Approach
+05:42 Code
+10:49 Manually Hard Approach
 
 Suggested Videos and Playlists:
 Dynamic Programming Memoization: https://youtu.be/zlJegWQBb40
@@ -75,7 +81,7 @@ React JS Stone Paper Scissors Part 5: https://youtu.be/nlImqlrsikU
 React JS Stone Paper Scissors Part 6: https://youtu.be/mG_KTXCMjr4
 React JS Stone Paper Scissors Part 7: https://youtu.be/1GYexI3UMXI
 React JS Stone Paper Scissors Part 8: https://youtu.be/by_BaMYH-Dc
-.Competitive Programming Approach: https://youtu.be/fPtpCGs9Sew
+Competitive Programming Approach: https://youtu.be/fPtpCGs9Sew
 Git and GitHub: https://youtu.be/91olXMK1i6Y
 Programmer wishing Valentine's Day: https://youtu.be/N_tfLZAr-ZI
 Python vs Java: https://youtu.be/u9fIRPYQQuU
@@ -87,12 +93,15 @@ Python Tips and Tricks 1: https://youtu.be/t4a3HaKUiP8
 Python Tips and Tricks 2: https://youtu.be/HbNNzIzCf0g
 Python Tips and Tricks 3: https://youtu.be/z9a5PBc7dcU
 Python Tips and Tricks 4: https://youtu.be/JjO5kK05P5o
+LeetCode - Add Two Numbers: https://youtu.be/bljnXYf7P1Y
+LeetCode - Longest Substring without Repeating Chars: https://youtu.be/O0mBZGCXRSA
 .Data Structures and Algorithms Tutorial: https://www.youtube.com/playlist?list=PLrJGwAG1U62RhAOKhYgqqRvDBjFb4wKp1
 Python Game Programming: https://www.youtube.com/playlist?list=PLrJGwAG1U62RO8Fbkt_WBgQMx2b7IsEB0
 Python Built in Functions A to Z: https://www.youtube.com/playlist?list=PLrJGwAG1U62RW_hGGnk7xXG0LciHkT54X
 Binary Tree Data Strucutre and Algorithms: https://www.youtube.com/playlist?list=PLrJGwAG1U62QC7R_qxeTFYBwdUlWcu03l
 Linked List Data Structure and Algorithms: https://www.youtube.com/playlist?list=PLrJGwAG1U62Q2XqQdivTuFElLzZc5jX2K
 React JS Stone Paper Scissors: https://youtube.com/playlist?list=PLrJGwAG1U62QgFXcjx29UMSA_mNs-ASRE
+.LeetCode Competitive Programming: https://youtube.com/playlist?list=PLrJGwAG1U62TEBlI9_y4ufTIAE7QpTSS4
 
 GitHub Repository:
 https://github.com/AdityaShenoy/
