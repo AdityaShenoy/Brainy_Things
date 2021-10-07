@@ -2,24 +2,26 @@ Type:
 V
 
 Title:
-Binary Search | Linear Search | Searching Algorithms | Data Structures and Algorithms in Python
+Linked List Algorithms | Data Structures and Algorithms Course in Python
 
 Keywords:
-Binary Search
-Linear Search
-Searching Algorithms
+Linked List Algorithms
+Linked List Algorithms in Python
+Linked List Algorithms Fundamentals
 Data Structures and Algorithms Course in Python
+Data Structures and Algorithms Course
+Data Structures and Algorithms
 DSA Course
-Binary Search in Python
-Linear Search in Python
-Searching Algorithms in Python
 
 Timestamps:
 00:00 Introduction
-00:34 Linear Search
-03:24 Linear Search Dry Run
-06:46 Binary Search
-13:02 Binary Search Dry Run
+00:56 Linked List Structure
+03:41 Linked List Traversal
+11:24 Linked List Traversal Dry Run
+14:30 Linked List Add Nodes
+23:34 Linked List Add Nodes Dry Run
+25:26 Linked List Delete Nodes
+34:38 Linked List Delete Nodes Dry Run
 
 Suggested Videos and Playlists:
 Dynamic Programming Memoization: https://youtu.be/zlJegWQBb40
@@ -91,14 +93,15 @@ LeetCode - Add Two Numbers: https://youtu.be/bljnXYf7P1Y
 LeetCode - Longest Substring without Repeating Chars: https://youtu.be/O0mBZGCXRSA
 DSA Course - Intro: https://youtu.be/FGICYapXCWg
 DSA Course - Searching Algorithms Fundamentals: https://youtu.be/8ICMGhc656s
+DSA Course - Linked List Fundamentals: https://youtu.be/VLL3xKZZaZc
 Data Structures and Algorithms Tutorial: https://www.youtube.com/playlist?list=PLrJGwAG1U62RhAOKhYgqqRvDBjFb4wKp1
 Python Game Programming: https://www.youtube.com/playlist?list=PLrJGwAG1U62RO8Fbkt_WBgQMx2b7IsEB0
 Python Built in Functions A to Z: https://www.youtube.com/playlist?list=PLrJGwAG1U62RW_hGGnk7xXG0LciHkT54X
 Binary Tree Data Strucutre and Algorithms: https://www.youtube.com/playlist?list=PLrJGwAG1U62QC7R_qxeTFYBwdUlWcu03l
 Linked List Data Structure and Algorithms: https://www.youtube.com/playlist?list=PLrJGwAG1U62Q2XqQdivTuFElLzZc5jX2K
-.React JS Stone Paper Scissors: https://youtube.com/playlist?list=PLrJGwAG1U62QgFXcjx29UMSA_mNs-ASRE
+React JS Stone Paper Scissors: https://youtube.com/playlist?list=PLrJGwAG1U62QgFXcjx29UMSA_mNs-ASRE
 .LeetCode Competitive Programming: https://youtube.com/playlist?list=PLrJGwAG1U62TEBlI9_y4ufTIAE7QpTSS4
-Data Structures and Algorithms Course: https://youtube.com/playlist?list=PLrJGwAG1U62TcfE4TR65RnWqf1ss7W2HR
+.Data Structures and Algorithms Course: https://youtube.com/playlist?list=PLrJGwAG1U62TcfE4TR65RnWqf1ss7W2HR
 
 GitHub Repository:
 https://github.com/AdityaShenoy/Data_Structures_and_Algorithms
